@@ -1,0 +1,12 @@
+{
+  // --- Makes the "Live Server" VS Code extension work with this project ---
+  //
+  // Our web pages use addresses that start from "src" (for example
+  // /front-end/styles/global.css). This line tells Live Server to treat the
+  // "src" folder as the start of the website, so those addresses line up.
+  //
+  // Now you can press "Go Live" (bottom-right of VS Code) and the app opens.
+  // The login form works this way. Saving a profile to a file needs the
+  // Node back-end (see the main README) — that part is fine to skip for now.
+  "liveServer.settings.root": "/src"
+}

@@ -9,19 +9,33 @@ organise a project so it is easy to build on. Read the folders and the little
 
 ---
 
-## Run it (2 steps)
+## Run it
 
-1. Install **Node.js** once from <https://nodejs.org> (this lets us run the
-   little back-end that saves your profile).
+There are two ways. Start with the easy one.
+
+### Easy way: Live Server (no install of Node needed)
+
+1. In VS Code, install the **Live Server** extension (by Ritwick Dey).
+2. Open **this whole project folder** in VS Code.
+3. Open `src/index.html`, then click **Go Live** (bottom-right of VS Code).
+
+The app opens in your browser and the **login page works**. Saving a profile to
+a file won't work this way (that needs the back-end below) — and that's totally
+fine for now.
+
+> A settings file (`.vscode/settings.json`) tells Live Server to start from the
+> `src` folder, so everything lines up.
+
+### Full way: the Node back-end (so profiles save to a file)
+
+1. Install **Node.js** once from <https://nodejs.org>.
 2. In a terminal, from this folder, run:
 
    ```
    node src/back-end/server.js
    ```
 
-   Then open your browser to **http://localhost:3000**
-
-   To stop it, press `Ctrl + C` in the terminal.
+   Then open your browser to **http://localhost:3000**. Stop it with `Ctrl + C`.
 
 > No packages to install — the back-end uses only what comes with Node.
 
@@ -51,7 +65,7 @@ HYTE_Summer_Course/
     ├── index.html       ← the first page the browser opens
     ├── index.js         ← shared start-up script (adds the header)
     ├── front-end/       ← everything you SEE (pages, styles, buttons)
-    │   ├── pages/        ← one folder per page (home, profile)
+    │   ├── pages/        ← one folder per page (home, profile, sam-page example)
     │   ├── components/   ← reusable pieces (the forms)
     │   ├── common/       ← shared pieces used on many pages (the header)
     │   ├── utils/        ← shared helper functions (small JS tools)
@@ -61,6 +75,14 @@ HYTE_Summer_Course/
 
 Every folder has its own short `README` explaining what belongs there and how
 to make one in your own project.
+
+---
+
+## ⭐ Your first task
+
+Make your own page! `src/front-end/pages/sam-page/` is a super-simple example
+page (just HTML + CSS, no JavaScript). Follow the steps in that folder's
+`SAM_README.md` to copy it into your own `{yourname}-page/` and push it.
 
 ---
 

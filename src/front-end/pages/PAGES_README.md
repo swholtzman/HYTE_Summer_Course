@@ -12,8 +12,12 @@ pages/
 │   ├── main-page.html   ← the page's content
 │   ├── main-page.css    ← styles just for this page
 │   └── main-page.js     ← what this page does
-└── profile-page/    ← the profile page (same three files)
+├── profile-page/    ← the profile page (same three files)
+└── sam-page/        ← a super-simple EXAMPLE page (HTML + CSS, no JS)
 ```
+
+> 🌟 **New coder? Start with `sam-page/`.** It's the simplest page here and it
+> comes with a step-by-step task (`SAM_README.md`) for making your very own page.
 
 ### Why are they in their own folder?
 
