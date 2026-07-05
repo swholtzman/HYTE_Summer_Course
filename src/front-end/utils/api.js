@@ -9,6 +9,8 @@
 */
 
 // Send a user's info to the server, which saves it as a JSON file.
+// JSON = JavaScript Object Notation, a text format for storing objects. 
+// Super easy to read and write, and works in every programming language.
 // `user` is an object like { name, githubUsername, highSchool, hyteGoal }.
 async function saveUserToServer(user) {
   try {

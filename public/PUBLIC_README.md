@@ -1,13 +1,12 @@
-# public — files anyone can load
+# public
 
-The `public` folder holds files that don't change and are safe for everyone to
-see: **images, icons, logos, fonts**.
+The public folder holds files that don't change and are safe for anyone to load:
+images, icons, logos, and fonts.
 
-`img/` is where pictures go. To use one on a page:
+Pictures go in `img/`. To use one on a page:
 
-```html
-<img src="/public/img/logo.png" alt="HYTE logo" />
-```
+    <img src="/public/img/logo.png" alt="HYTE logo" />
 
-**In your own project:** keep pictures and other "just sit there" files in
-`public` so they are easy to find and separate from your code.
+Keeping these "just sits there" files in one folder makes them easy to find and
+keeps them out of the way of your code. It's a good habit to carry into your own
+projects.

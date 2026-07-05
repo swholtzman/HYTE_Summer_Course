@@ -1,25 +1,25 @@
-# login-form — the sign-in form
+# login-form
 
-A simple form that asks **who you are** (your name + GitHub username), then
+A simple form that asks who you are (your name and GitHub username) and then
 remembers you.
 
-### What it teaches
+What it shows you:
 
-- **`localStorage`** — the browser's little box for keeping small bits of info,
-  even after you close the tab. We save you there so other pages know who you
-  are. (See `utils/storage.js`.)
-- **Saving a JSON file** — we also send your info to the back-end, which saves it
-  as a file like `back-end/data/users/yourname.json`. Those files are
-  **git-ignored** so you never commit someone's info by accident.
+- localStorage, the browser's small box for keeping bits of info even after you
+  close the tab. We save you there so the other pages know who you are. See
+  `utils/storage.js`.
+- Saving a JSON file. We also send your info to the back-end, which saves it as a
+  file like `back-end/data/users/yourname.json`. Those files are kept out of git
+  so nobody commits someone's personal info by accident.
 
-### The files
+The files:
 
-- `login-form.html` — the form's boxes and button
-- `login-form.css` — styles just for this form
-- `login-form.js` — reads the boxes, saves you, sends you to your profile
+- `login-form.html` is the boxes and the button.
+- `login-form.css` is the styles just for this form.
+- `login-form.js` reads the boxes, saves you, and sends you to your profile.
 
-> ⚠️ This is a friendly "who are you?" sign-in, **not real security** — there is
-> no password. Real logins are a much bigger topic for later.
+One thing to be clear about: this is a friendly "who are you?" sign-in, not real
+security. There's no password. Real logins are a much bigger topic for later.
 
-**In your own project:** start with a plain form, then use `localStorage` to
-remember simple things (like a name or a theme choice).
+For your own projects, start with a plain form and use localStorage to remember
+simple things, like a name or a theme choice.

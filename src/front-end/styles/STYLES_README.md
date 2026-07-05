@@ -1,22 +1,22 @@
-# styles — shared CSS
+# styles
 
-This folder holds styles used across the **whole app**. The main one is
-`global.css`: colours, fonts, page spacing, and the shared look of buttons and
+This folder holds the styles used across the whole app. The main one is
+`global.css`: colors, fonts, page spacing, and the shared look of buttons and
 forms.
 
-### Two kinds of CSS — where does a style go?
+Where does a style go?
 
-- **Used on many pages?** → put it in `global.css` here.
-  (Example: our button colour, our page width.)
-- **Used by only one page or component?** → put it in that page/component's own
-  `.css` file, right next to it.
-  (Example: `main-page.css`, `login-form.css`.)
+- If more than one page uses it, put it in `global.css` here. Examples: the
+  button color, the page width.
+- If only one page or component uses it, put it in that page or component's own
+  `.css` file, right next to it. Examples: `main-page.css`, `login-form.css`.
 
-This split keeps shared styles in one place and page-only styles out of the way.
+Splitting styles this way keeps the shared ones in a single place and keeps
+page-only styles out of the way.
 
-**Tip:** `global.css` names our colours and sizes as *variables* at the top
-(like `--brand`). Use them with `var(--brand)` so the whole app stays
-consistent and is easy to re-colour later.
+One tip: `global.css` lists our colors and sizes as variables at the top (things
+like `--brand`). Use them with `var(--brand)` so the whole app stays consistent
+and is easy to recolor later.
 
-**In your own project:** start with one `global.css` here, and add a scoped
-`.css` file next to any page/component that needs its own special styles.
+For your own projects, start with a single `global.css` and add a scoped `.css`
+file next to any page or component that needs something special.

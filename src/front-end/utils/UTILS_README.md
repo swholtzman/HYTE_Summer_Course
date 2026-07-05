@@ -1,21 +1,20 @@
-# utils — shared helper functions
+# utils
 
-"utils" is short for **utilities**: small, reusable JavaScript functions that
-many parts of the app need. Writing them once here keeps our code **DRY**
-(Don't Repeat Yourself).
+"utils" is short for utilities: small, reusable JavaScript functions that many
+parts of the app need. Writing them once here keeps the code from repeating
+itself.
 
-Each file does **one job**:
+Each file does one job:
 
-| File                       | What it helps with                                   |
-| -------------------------- | ---------------------------------------------------- |
-| `storage.js`               | Remember the user in the browser (`localStorage`).   |
-| `api.js`                   | Talk to our back-end to save / load a user.          |
-| `components.js`            | Load a reusable HTML piece into a page.              |
-| `keener-api.js`            | *Optional:* also save to an online database.          |
-| `keener-config.example.js` | *Optional:* a template for keeners' secret settings. |
+- `storage.js` remembers the user in the browser (localStorage).
+- `api.js` talks to our back-end to save and load a user.
+- `components.js` loads a reusable piece of HTML into a page.
+- `keener-api.js` is optional; it also saves to an online database.
+- `keener-config.example.js` is optional; it's a template for the secret
+  settings a keener would add.
 
-**How pages use them:** a page includes the util file with a `<script>` tag,
-then calls the function by name, e.g. `saveCurrentUser(user)`.
+A page uses these by including the file with a `<script>` tag, then calling the
+function by name, for example `saveCurrentUser(user)`.
 
-**In your own project:** the moment you use the same helper in two files, move
-it here and give it a clear name.
+Rule of thumb: the moment you use the same helper in two files, move it here and
+give it a clear name.
