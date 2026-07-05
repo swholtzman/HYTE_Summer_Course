@@ -1,0 +1,20 @@
+/*
+  matthew-page.css  —  styles just for Sam's example page.
+
+  These rules only affect THIS page. The shared look (background, fonts,
+  buttons) comes from global.css. Try changing the values below and refresh
+  your browser to see what happens!
+*/
+
+.matthew-title {
+  color: var(--brand);
+}
+
+.matthew-badge {
+  display: inline-block;
+  background: #c2ffe9; /* 👉 change this colour */
+  color: #00707e;
+  padding: 8px 14px;
+  border-radius: 999px; /* big number = fully rounded pill shape */
+  font-weight: 600;
+}
