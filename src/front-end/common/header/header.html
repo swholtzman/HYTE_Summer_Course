@@ -1,0 +1,17 @@
+<!--
+  header.html  —  the bar at the top of every page.
+
+  It lives here ONCE and is loaded into each page by index.js, so if we change
+  the header we only change it in one place. That is the whole point of the
+  "common" folder: pieces shared by many pages.
+-->
+<header class="site-header">
+  <a class="site-header__logo" href="/front-end/pages/main-page/main-page.html">HYTE</a>
+
+  <nav class="site-header__nav">
+    <a href="/front-end/pages/main-page/main-page.html">Home</a>
+    <a href="/front-end/pages/profile-page/profile-page.html">Profile</a>
+    <!-- index.js fills this span with the user's name + a Log out button. -->
+    <span class="site-header__user" id="header-user"></span>
+  </nav>
+</header>

@@ -1,0 +1,3 @@
+# This empty file keeps the (otherwise empty) "users" folder in git.
+# The real user files (like "octocat.json") are ignored by .gitignore,
+# so git would forget this folder exists without a file like this to hold its place.

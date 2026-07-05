@@ -1,0 +1,41 @@
+/*
+  header.css  —  styles used ONLY by the header component.
+
+  These live next to header.html (not in global.css) because only the header
+  needs them. Keeping component styles beside their component keeps things tidy.
+*/
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--brand); /* uses a colour from global.css */
+  padding: 12px 20px;
+}
+
+.site-header__logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.site-header__nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-header__nav a:hover {
+  text-decoration: underline;
+}
+
+.site-header__user {
+  color: #fff;
+  font-size: 14px;
+}

@@ -1,0 +1,18 @@
+# --- HYTE: things we should NEVER commit to GitHub ---
+
+# Per-user data saved by the login/profile forms.
+# These files hold people's info, so they stay on YOUR computer only.
+src/back-end/data/users/*.json
+
+# Secret settings (API keys, tokens). Copy config.example.js to config.js
+# and put your real secrets there. config.js is ignored on purpose.
+src/back-end/config.js
+src/front-end/utils/keener-config.js
+
+# Junk that operating systems and editors create.
+.DS_Store
+Thumbs.db
+*.log
+
+# Node stuff (only appears if you install packages, which this project does NOT need).
+node_modules/

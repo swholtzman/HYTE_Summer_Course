@@ -1,0 +1,18 @@
+<!--
+  login-form.html  —  just the FORM part of signing in.
+
+  It is kept separate so it can be reused and is easy to find. The main page
+  loads this form into itself. login-form.js makes the form actually work.
+
+  Note: this is a friendly "who are you?" sign-in, NOT real security.
+  There is no password. Real apps need real logins — that is a bigger topic!
+-->
+<form id="login-form" class="login-form">
+  <label for="login-name">Your name</label>
+  <input id="login-name" name="name" type="text" placeholder="Jordan Lee" required />
+
+  <label for="login-github">Your GitHub username</label>
+  <input id="login-github" name="githubUsername" type="text" placeholder="jordanlee" required />
+
+  <button type="submit">Sign in</button>
+</form>

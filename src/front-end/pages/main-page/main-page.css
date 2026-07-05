@@ -1,0 +1,8 @@
+/*
+  main-page.css  —  styles used ONLY by the home page.
+  Anything shared with other pages lives in global.css instead.
+*/
+
+.welcome-title {
+  margin-top: 0;
+}

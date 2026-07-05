@@ -1,0 +1,115 @@
+/*
+  global.css  —  styles used EVERYWHERE in the app.
+
+  Put a style here when more than one page needs it:
+    colours, fonts, the header, buttons, page spacing, form basics.
+
+  Put a style in a page/component's own .css file when only that one
+  page or component needs it. (See styles/STYLES_README.md.)
+*/
+
+/* -----------------------------------------------------------------
+   1. Variables: name our colours and sizes in ONE place.
+   Change a value here and it updates across the whole app.
+   Use them later like:  color: var(--brand);
+------------------------------------------------------------------ */
+:root {
+  --brand: #2f5bea; /* main HYTE blue */
+  --brand-dark: #1f3fb0; /* darker blue for hover */
+  --text: #1a1a1a; /* normal text colour */
+  --muted: #666666; /* light grey text */
+  --bg: #f5f7fb; /* page background */
+  --card: #ffffff; /* boxes/cards background */
+  --border: #d9dee8; /* thin lines around boxes */
+  --radius: 10px; /* how round corners are */
+  --space: 16px; /* our standard gap between things */
+  --font: "Segoe UI", system-ui, Arial, sans-serif;
+}
+
+/* -----------------------------------------------------------------
+   2. Base: reset spacing and set the default look of the page.
+------------------------------------------------------------------ */
+* {
+  box-sizing: border-box; /* padding no longer makes boxes wider — easier to size */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  color: var(--brand-dark);
+}
+
+a {
+  color: var(--brand);
+}
+
+/* -----------------------------------------------------------------
+   3. Layout: a centred column so content is not too wide to read.
+------------------------------------------------------------------ */
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--space);
+}
+
+/* A white box we can put content inside. */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: calc(var(--space) * 1.5);
+  margin-bottom: var(--space);
+}
+
+/* -----------------------------------------------------------------
+   4. Buttons: one shared look for every button.
+------------------------------------------------------------------ */
+button,
+.button {
+  font: inherit;
+  cursor: pointer;
+  background: var(--brand);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 10px 18px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover,
+.button:hover {
+  background: var(--brand-dark);
+}
+
+/* -----------------------------------------------------------------
+   5. Forms: shared look for labels and text boxes.
+------------------------------------------------------------------ */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+input,
+textarea {
+  font: inherit;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: var(--space);
+  background: #fff;
+}
+
+/* A small grey helper line under a heading. */
+.muted {
+  color: var(--muted);
+}

@@ -1,0 +1,10 @@
+/*
+  who-am-i.css  —  styles used ONLY by the profile form.
+  Shared input/button looks come from global.css.
+*/
+
+.profile-form__message {
+  min-height: 20px; /* reserve space so the page does not jump when the message shows */
+  color: var(--brand-dark);
+  font-weight: 600;
+}

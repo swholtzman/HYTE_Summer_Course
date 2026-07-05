@@ -1,0 +1,19 @@
+<!--
+  who-am-i.html  —  the PROFILE form ("who am I?").
+
+  Unlike the login form, these answers can be changed any time. The profile
+  page loads this form and fills it with whatever the user saved before.
+  who-am-i.js makes it save.
+-->
+<form id="profile-form" class="profile-form">
+  <label for="profile-highschool">Which high school do you attend?</label>
+  <input id="profile-highschool" name="highSchool" type="text" placeholder="Riverside High" />
+
+  <label for="profile-goal">What is your goal for completing HYTE?</label>
+  <textarea id="profile-goal" name="hyteGoal" rows="3" placeholder="I want to build my own app!"></textarea>
+
+  <button type="submit">Save profile</button>
+
+  <!-- who-am-i.js writes a "Saved!" message here. -->
+  <p id="profile-message" class="profile-form__message"></p>
+</form>
