@@ -1,0 +1,21 @@
+/*
+  sam-page.css  —  styles just for Sam's example page.
+
+  These rules only affect THIS page. The shared look (background, fonts,
+  buttons) comes from global.css. Try changing the values below and refresh
+  your browser to see what happens!
+*/
+
+.sam-title {
+  /* 👉 Try a different colour, like: crimson, green, #ff8800 */
+  color: var(--brand);
+}
+
+.sam-badge {
+  display: inline-block;
+  background: #ffe27a; /* 👉 change this colour */
+  color: #5a4b00;
+  padding: 8px 14px;
+  border-radius: 999px; /* big number = fully rounded pill shape */
+  font-weight: 600;
+}
