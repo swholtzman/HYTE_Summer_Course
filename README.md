@@ -1,84 +1,104 @@
-# HYTE Summer Course starter app
+# RoommateSync 🏠
 
-A small HTML, CSS, and JavaScript app that shows how a real project is put
-together. It has a home page, a simple sign-in, and an editable profile.
+**An all-in-one mobile app for simplifying shared living.**
 
-The point isn't the features. It's to show you a tidy way to organize a project
-so it's easy to add to later. As you look around, read the short README files
-inside each folder. They explain what that folder is for.
+RoommateSync brings chore management, shared expenses, groceries, and communication together in a single platform — built for students and young adults navigating the challenges of roommate life.
 
-Doing this as a class? Start with WALKTHROUGH.md. It's the step-by-step lesson,
-from running the app to building your own page.
+---
 
-## Running it
+## The Problem
 
-There are two ways. Start with the easy one.
+As housing costs continue to rise, more people are living with roommates than ever before. But juggling chores, splitting bills, coordinating groceries, and communicating needs across multiple apps and group chats often leads to confusion, miscommunication, and unnecessary conflict.
 
-### Easy way: Live Server (nothing to install beyond VS Code)
+## Our Solution
 
-1. In VS Code, install the "Live Server" extension (by Ritwick Dey).
-2. Open this whole project folder in VS Code.
-3. Open `src/index.html` and click "Go Live" in the bottom-right corner.
+RoommateSync consolidates the essential tools of shared living into one app, so roommates can spend less time managing logistics and more time enjoying their space.
 
-The app opens in your browser and the login page works. Saving a profile to a
-file needs the back-end below, so that part won't work this way. That's fine for
-now. (A settings file, `.vscode/settings.json`, tells Live Server to start from
-the `src` folder so the addresses line up.)
+### Core Features
 
-### Full way: the Node back-end (so profiles save to a file)
+- **Chore Management** — Assign, track, and split household responsibilities fairly.
+- **Shared Expenses** — Log and split bills, rent, and shared purchases without the awkward IOUs.
+- **Groceries** — Coordinate shared grocery lists and avoid duplicate purchases.
+- **Communication Hub** — Keep roommate conversations organized and in one place.
 
-1. Install Node.js once from https://nodejs.org.
-2. In a terminal, from this folder, run:
+### 🔑 The Disclaimer Feature
 
-       node src/back-end/server.js
+What sets RoommateSync apart is our **Disclaimer** feature — a lightweight way for roommates to signal their needs before misunderstandings happen. Roommates can quickly flag things like:
 
-3. Open your browser to http://localhost:3000. Stop the server with Ctrl+C.
+- Requesting quiet time
+- Letting others know guests are coming over
+- Signaling a need for privacy
 
-There are no packages to install. The back-end only uses what comes with Node.
+By making these small, everyday needs visible and easy to communicate, RoommateSync helps prevent the friction that often builds up in shared living situations.
 
-## What each part does
+---
 
-- Home page: welcomes you and shows the sign-in form.
-- Sign in: you type your name and GitHub username. The app remembers you two
-  ways, in the browser (localStorage) and as a small JSON file on your computer.
-- Profile page: asks which high school you attend and your goal for HYTE. You can
-  edit and save these any time.
+## Project Status
 
-The saved JSON files hold people's info, so they are kept out of git on purpose
-(see `.gitignore`). Don't commit them.
+🚧 **This repository contains an MVP (Minimum Viable Product)** built as part of a summer course focused on app development.
 
-## Folder map
+This project is a learning-driven prototype. Our goals for this phase are to:
 
+- Gain hands-on experience with mobile app development
+- Practice user interface and user experience design
+- Apply product development fundamentals (scoping, iteration, feedback)
+- Collect feedback to refine the concept ahead of a potential future launch
+
+Expect the feature set and architecture to evolve quickly as we learn and iterate throughout the course.
+
+---
+
+## Tech Stack
+
+_To be finalized as development progresses._
+
+| Layer | Tool/Framework |
+|---|---|
+| Mobile Frontend | TBD |
+| Backend | TBD |
+| Database | TBD |
+| Authentication | TBD |
+
+---
+
+## Getting Started
+
+> Setup instructions will be added here once the initial build is scaffolded.
+
+```bash
+# Clone the repository
+git clone <repo-url>
+cd roommatesync
+
+# Install dependencies
+# (instructions coming soon)
 ```
-HYTE_Summer_Course/
-  README.md            you are here
-  WALKTHROUGH.md       the guided lesson
-  .gitignore           files git should never save
-  public/              images and other public files
-  src/                 all of our source code
-    index.html         the first page the browser opens
-    index.js           shared start-up script (adds the header)
-    front-end/         everything you see (pages, styles, buttons)
-      pages/           one folder per page (home, profile, sam-page example)
-      components/      reusable pieces (the forms)
-      common/          pieces shared across pages (the header)
-      utils/           shared helper functions
-      styles/          shared styles (global.css)
-    back-end/          the small server that saves data
-```
 
-Every folder has its own short README explaining what belongs there and, where
-it helps, how to do the same thing in your own project.
+---
 
-## Your first task
+## Roadmap
 
-Build your own page. `src/front-end/pages/sam-page/` is a simple example made of
-only HTML and CSS. Follow the steps in that folder's SAM_README.md to copy it
-into your own `{yourname}-page/` and share it with a pull request.
+- [ ] Finalize MVP feature scope
+- [ ] Build core UI screens (chores, expenses, groceries, communication)
+- [ ] Implement Disclaimer feature
+- [ ] User testing & feedback round
+- [ ] Polish for demo presentation
+- [ ] Explore post-course launch plan
 
-## Two habits worth copying
+---
 
-1. Keep things separate. The front-end (what you see) is apart from the back-end
-   (what saves data), and each page and component has its own folder.
-2. Don't repeat yourself. Anything used in more than one place, like the header,
-   the colors, or a helper function, is written once and shared.
+## Contributing
+
+This is currently a closed team project for course purposes. If you're a teammate, please branch off `main` and open a pull request for review before merging.
+
+## Team
+
+_Add team member names/roles here._
+
+## License
+
+_License to be determined._
+
+---
+
+*Built with 💡 for a summer course, aimed at making shared living a little easier for everyone.*
