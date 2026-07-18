@@ -1,4 +1,18 @@
- folder and rename the copy to your first name plus
+# sam-page: your example page and your first task
+
+This is the simplest page in the project: one HTML file and one CSS file, and no
+JavaScript. It's here for you to copy.
+
+- `sam-page.html` is the content (headings, text, a list, a link).
+- `sam-page.css` is the styles just for this page.
+
+## Intro task: make your own page
+
+Follow these steps to add your own page to the project.
+
+### 1. Copy this folder
+
+Copy the whole `sam-page` folder and rename the copy to your first name plus
 `-page`. For example, if your name is Alex, name it `alex-page/`.
 
 ### 2. Rename the files inside
@@ -53,18 +67,3 @@ In the terminal, from the project folder:
    merge it in.
 
 That's it. You've created and shared your first web page.
-# sam-page: your example page and your first task
-
-This is the simplest page in the project: one HTML file and one CSS file, and no
-JavaScript. It's here for you to copy.
-
-- `sam-page.html` is the content (headings, text, a list, a link).
-- `sam-page.css` is the styles just for this page.
-
-## Intro task: make your own page
-
-Follow these steps to add your own page to the project.
-
-### 1. Copy this folder
-
-Copy the whole `sam-page`
